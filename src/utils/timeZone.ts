@@ -1,8 +1,8 @@
-const INDIA_TIME_ZONE = "Asia/Kolkata";
-const INDIA_LOCALE = "en-IN";
+const INDIA_TIME_ZONE = 'Asia/Kolkata'
+const INDIA_LOCALE = 'en-IN'
 
 function toDate(value: Date | string | number): Date {
-  return value instanceof Date ? value : new Date(value);
+  return value instanceof Date ? value : new Date(value)
 }
 
 export function formatIndianDate(
@@ -11,10 +11,10 @@ export function formatIndianDate(
 ): string {
   return new Intl.DateTimeFormat(locale, {
     timeZone: INDIA_TIME_ZONE,
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  }).format(toDate(value));
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(toDate(value))
 }
 
 export function formatIndianTime(
@@ -24,11 +24,11 @@ export function formatIndianTime(
 ): string {
   return new Intl.DateTimeFormat(locale, {
     timeZone: INDIA_TIME_ZONE,
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
     hour12: !is24Hour,
-  }).format(toDate(value));
+  }).format(toDate(value))
 }
 
 export function formatIndianDateTime(
@@ -38,12 +38,12 @@ export function formatIndianDateTime(
 ): string {
   return new Intl.DateTimeFormat(locale, {
     timeZone: INDIA_TIME_ZONE,
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
     hour12: !is24Hour,
-  }).format(toDate(value));
+  }).format(toDate(value))
 }
