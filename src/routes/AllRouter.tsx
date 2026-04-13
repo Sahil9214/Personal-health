@@ -6,7 +6,7 @@ import Login from '@/pages/healthCareProfessional/login'
 import VerifyOtp from '@/pages/healthCareProfessional/verify-otp'
 import { ROUTES } from '@/lib/constant'
 import HomePage from '@/pages/healthCareProfessional/home'
-import OnBoardingForm from '@/pages/healthCareProfessional/onBoarding'
+import { OnBoardingForm } from '@/pages/healthCareProfessional/onBoarding'
 
 const AllRouter = () => {
   return (

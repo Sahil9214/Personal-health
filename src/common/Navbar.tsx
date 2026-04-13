@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 export const Navbar = () => {
     const navigate = useNavigate()
   return (
-    <div className='flex justify-between items-center py-5 max-w-7xl mx-auto'>
+    <div className='flex justify-between items-center py-4 max-w-[1200px] mx-auto'>
         <img src={logoImg} alt="logo" />
         <Button
         variant='default'
